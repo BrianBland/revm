@@ -343,6 +343,8 @@ mod tests {
         #[cfg(feature = "optimism")]
         spec_to_generic!(FJORD, assert_eq!(SPEC::SPEC_ID, FJORD));
         spec_to_generic!(PRAGUE, assert_eq!(SPEC::SPEC_ID, PRAGUE));
+        #[cfg(feature = "optimism")]
+        spec_to_generic!(FJORD, assert_eq!(SPEC::SPEC_ID, FJORD));
         spec_to_generic!(LATEST, assert_eq!(SPEC::SPEC_ID, LATEST));
     }
 }
